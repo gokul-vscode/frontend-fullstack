@@ -35,7 +35,7 @@ const Products = ({searchTerm}) => {
 
 
    // 🔥 SEARCH FILTER
-   const [searchResults, setSearchResults] = useState([]);
+  //  const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
   if (!searchTerm || searchTerm.trim() === "") {
@@ -50,22 +50,22 @@ const Products = ({searchTerm}) => {
   setSearchResults(result);
 }, [searchTerm, products]);
 
-const [searchQuery, setSearchQuery] = useState("");
+// const [searchQuery, setSearchQuery] = useState("");
 // const [searchResults, setSearchResults] = useState([]);
-const handleSearch = (value) => {
-  setSearchQuery(value);
+// const handleSearch = (value) => {
+//   setSearchQuery(value);
 
-  if (value.trim() === "") {
-    setSearchResults([]);
-    return;
-  }
+//   if (value.trim() === "") {
+//     setSearchResults([]);
+//     return;
+//   }
 
-  const filtered = products.filter((p) =>
-    p.name.toLowerCase().includes(value.toLowerCase())
-  );
+//   const filtered = products.filter((p) =>
+//     p.name.toLowerCase().includes(value.toLowerCase())
+//   );
 
-  setSearchResults(filtered);
-};
+//   setSearchResults(filtered);
+// };
   
 
   return (

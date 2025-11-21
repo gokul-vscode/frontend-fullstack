@@ -18,7 +18,7 @@ const Bento = () => {
           <FaShoppingBag className="bento-icon" />
           <h2>New Arrivals</h2>
           <p>Explore the latest fashion & tech trends just dropped!</p>
-          <a href="" id="shopnow"><button>Shop Now</button></a>
+          <a href="/explore" id="shopnow"><button>Shop Now</button></a>
         </div>
       </div>
 
