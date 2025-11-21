@@ -50,22 +50,22 @@ const Products = ({searchTerm}) => {
   setSearchResults(result);
 }, [searchTerm, products]);
 
-// const [searchQuery, setSearchQuery] = useState("");
-// const [searchResults, setSearchResults] = useState([]);
-// const handleSearch = (value) => {
-//   setSearchQuery(value);
+const [searchQuery, setSearchQuery] = useState("");
+const [searchResults, setSearchResults] = useState([]);
+const handleSearch = (value) => {
+  setSearchQuery(value);
 
-//   if (value.trim() === "") {
-//     setSearchResults([]);
-//     return;
-//   }
+  if (value.trim() === "") {
+    setSearchResults([]);
+    return;
+  }
 
-//   const filtered = products.filter((p) =>
-//     p.name.toLowerCase().includes(value.toLowerCase())
-//   );
+  const filtered = products.filter((p) =>
+    p.name.toLowerCase().includes(value.toLowerCase())
+  );
 
-//   setSearchResults(filtered);
-// };
+  setSearchResults(filtered);
+};
   
 
   return (
