@@ -14,7 +14,8 @@ const Products = ({ searchTerm }) => {
   // Fetch API
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/products/")
+      // .get("http://127.0.0.1:8000/api/products/")
+      .get("https://backend-fullstack-5.onrender.com/api/products/")
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   }, []);

@@ -20,7 +20,7 @@ const ViewProducts = () => {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/products/${id}/`)
+      .get(`https://backend-fullstack-5.onrender.com/api/products/${id}/`)
       .then((res) => setProduct(res.data))
       .catch((err) => console.log(err));
   }, [id]);
