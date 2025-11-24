@@ -47,10 +47,11 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Support</h3>
           <ul>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Return Policy</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            <li><Link to="/faq">FAQs</Link></li>
+                <li><Link to="/return-policy">Return Policy</Link></li>
+                <li><Link to="/return-policy">Return Policy</Link></li>
+                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                <li><Link to="/terms">Terms & Conditions</Link></li>
           </ul>
         </div>
 
