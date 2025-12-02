@@ -299,7 +299,7 @@ html, body {
     position: absolute;
     top: 70px;
     right: -100%;
-    background: linear-gradient(180deg, #a855f7, #ec4899);
+    background: linear-gradient(180deg, #2f00ff, #ff0481);
     flex-direction: column;
     align-items: center;
     width: 100%;

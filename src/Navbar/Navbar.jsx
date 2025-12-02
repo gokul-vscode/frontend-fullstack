@@ -210,7 +210,27 @@ const Navbar = () => {
               autoFocus
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+            onFocus={() => searchResults.length > 0 && setShowDropdown(true)}
             />
+             {showDropdown && searchResults.length > 0 && (
+            <div className="search-dropdown">
+              {searchResults.map((item) => (
+                <div
+                  key={item.id}
+                  className="search-option"
+                  onClick={() => {
+                    navigate(`/viewproducts/${item.id}`);
+                    setShowDropdown(false);
+                    setSearchTerm("");
+                  }}
+                >
+                  <img src={item.image} alt={item.name} />
+                  <p className="option-name">{item.name}</p>
+                  <span>₹{item.price}</span>
+                </div>
+              ))}
+            </div>
+          )}
             <button type="button" onClick={toggleSearch}>
               <FaTimes />
             </button>
