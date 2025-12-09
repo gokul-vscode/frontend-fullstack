@@ -67,7 +67,7 @@ const Products = ({ searchTerm }) => {
                 <div className="product-card" key={p.id}>
                   <div className="product-image">
                     <Link to={`/viewproducts/${p.id}`}>
-                      <img src={p.image} alt={p.name} />
+                      <img src={`https://backend-fullstack-5.onrender.com${p.image}`} alt={p.name} onError={(e) => (e.target.src = "/placeholder.png")}  style={{ objectFit: "cover", width: "100%", height: "100%" }}/>
                     </Link>
                   </div>
 
