@@ -1,0 +1,3 @@
+[submodule "frontend-fullstack"]
+    path = frontend-fullstack
+    url = https://github.com/<owner>/<frontend-fullstack-repo>.git
